@@ -33,7 +33,7 @@ masks the text itself, so there is no call to `presidio-anonymizer`.
 | `SCORE_THRESHOLD` | `0.5` | Minimum Presidio confidence |
 | `LANGUAGE` | `en` | |
 | `REJECT_STATUS` | `403` | HTTP status of a rejection |
-| `PRESIDIO_TIMEOUT` | `5s` | Per analyzer call. agentgateway gives the webhook 10 s |
+| `PRESIDIO_TIMEOUT` | `10s` | Per analyzer call. Matches the 10 s agentgateway gives the webhook; raise both together |
 | `LISTEN` | `:8000` | |
 | `CACHE_SIZE` | `50000` | Messages kept in the in-memory findings cache. `0`: no cache |
 | `CACHE_TTL` | `1h` | How long a cached entry lives |

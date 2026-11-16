@@ -177,7 +177,7 @@ func (g *Guard) handleResponse(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	slog.SetDefault(slog.New(slog.NewJSONHandler(os.Stdout, nil)))
-	timeout := envDuration("PRESIDIO_TIMEOUT", 5*time.Second)
+	timeout := envDuration("PRESIDIO_TIMEOUT", 10*time.Second)
 	g := &Guard{
 		Analyzer: &Analyzer{
 			URL:       strings.TrimSuffix(env("PRESIDIO_URL", "http://127.0.0.1:3000"), "/"),
