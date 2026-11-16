@@ -16,7 +16,7 @@ spec:
       containers:
       - name: guard
         # The latest release; release-please updates the version.
-        image: ghcr.io/paurosello/presidio-guard:v1.0.0 # x-release-please-version
+        image: ghcr.io/paurosello/presidio-guard:v1.0.1 # x-release-please-version
         env:
         - name: PRESIDIO_URL
           value: http://127.0.0.1:3000
