@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2460 960" width="2460" height="960">
+<defs><marker id="head" viewBox="-20 -20 40 40" refX="0" refY="0" markerWidth="40" markerHeight="40" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M-13 -11 L1 0 L-13 11" fill="none" stroke="#8B3DFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="head-gray" viewBox="-20 -20 40 40" refX="0" refY="0" markerWidth="40" markerHeight="40" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M-13 -11 L1 0 L-13 11" fill="none" stroke="#9A97A8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect width="2460" height="960" fill="#FFFFFF"/>
+<circle cx="2520" cy="-120" r="420" fill="none" stroke="#F1EEF6" stroke-width="2"/>
+<circle cx="2520" cy="-120" r="620" fill="none" stroke="#F1EEF6" stroke-width="2"/>
+<rect x="60" y="60" width="440" height="240" rx="30" fill="#FAF9FC" stroke="#E4E1EE" stroke-width="3"/>
+<rect x="96" y="96" width="84" height="84" rx="22" fill="#FFFFFF" stroke="#E4E1EE" stroke-width="3"/>
+<rect x="117" y="122" width="42" height="32" rx="5" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="127,133 134,139 127,145" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="139" y1="145" x2="149" y2="145" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="206" y="136" font-family="DM Sans, Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="500" fill="#1C1830" text-anchor="start">Client</text>
+<text x="206" y="178" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">app or agent</text>
+<rect x="1010" y="60" width="520" height="240" rx="30" fill="#F4EEFD" stroke="#CBA8F7" stroke-width="3"/>
+<rect x="1046" y="96" width="84" height="84" rx="22" fill="#FFFFFF" stroke="#D9C2FA" stroke-width="3"/>
+<circle cx="1076" cy="151" r="5" fill="none" stroke="#8B3DFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="1100" cy="125" r="5" fill="none" stroke="#8B3DFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M1081 151 H1094 a7 7 0 0 0 0 -14 H1082 a7 7 0 0 1 0 -14 H1095" fill="none" stroke="#8B3DFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1156" y="136" font-family="DM Sans, Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="500" fill="#1C1830" text-anchor="start">agentgateway</text>
+<text x="1156" y="178" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">prompt guard</text>
+<rect x="1960" y="60" width="440" height="240" rx="30" fill="#FAF9FC" stroke="#E4E1EE" stroke-width="3"/>
+<rect x="1996" y="96" width="84" height="84" rx="22" fill="#FFFFFF" stroke="#E4E1EE" stroke-width="3"/>
+<circle cx="2038" cy="138" r="19" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="2038" cy="138" rx="8" ry="19" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="2019" y1="138" x2="2057" y2="138" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2106" y="136" font-family="DM Sans, Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="500" fill="#1C1830" text-anchor="start">LLM</text>
+<text x="2106" y="178" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">any provider</text>
+<path d="M500 180 L1004 180" fill="none" stroke="#8B3DFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#head)"/>
+<text x="752" y="150" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8B3DFF" text-anchor="middle">prompt</text>
+<path d="M1530 180 L1954 180" fill="none" stroke="#8B3DFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#head)"/>
+<text x="1742" y="150" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8B3DFF" text-anchor="middle">masked prompt</text>
+<rect x="700" y="440" width="1380" height="460" rx="36" fill="none" stroke="#E4E1EE" stroke-width="3" stroke-dasharray="12 10"/>
+<text x="740" y="492" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">one pod</text>
+<rect x="760" y="520" width="600" height="300" rx="30" fill="#F4EEFD" stroke="#CBA8F7" stroke-width="3"/>
+<rect x="796" y="556" width="84" height="84" rx="22" fill="#FFFFFF" stroke="#D9C2FA" stroke-width="3"/>
+<path d="M838 578 L854 585 V599 C854 609 846 615 838 619 C830 615 822 609 822 599 V585 Z" fill="none" stroke="#8B3DFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="832,599 837,604 845,594" fill="none" stroke="#8B3DFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="906" y="596" font-family="DM Sans, Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="500" fill="#1C1830" text-anchor="start">presidio-guard</text>
+<text x="906" y="638" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">Go · :8000</text>
+<text x="906" y="676" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">in-memory cache</text>
+<rect x="1460" y="520" width="560" height="300" rx="30" fill="#FAF9FC" stroke="#E4E1EE" stroke-width="3"/>
+<rect x="1496" y="556" width="84" height="84" rx="22" fill="#FFFFFF" stroke="#E4E1EE" stroke-width="3"/>
+<rect x="1523" y="583" width="30" height="30" rx="4" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1532" y="592" width="12" height="12" rx="1" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1531" y1="583" x2="1531" y2="577" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1531" y1="613" x2="1531" y2="619" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1523" y1="591" x2="1517" y2="591" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1553" y1="591" x2="1559" y2="591" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1545" y1="583" x2="1545" y2="577" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1545" y1="613" x2="1545" y2="619" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1523" y1="605" x2="1517" y2="605" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1553" y1="605" x2="1559" y2="605" fill="none" stroke="#4A4458" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1606" y="596" font-family="DM Sans, Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="500" fill="#1C1830" text-anchor="start">presidio-analyzer</text>
+<text x="1606" y="638" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">Python · :3000</text>
+<text x="1606" y="676" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">spaCy or BERT</text>
+<path d="M1360 670 L1454 670" fill="none" stroke="#8B3DFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#head)"/>
+<text x="1410" y="640" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8B3DFF" text-anchor="middle">batch</text>
+<path d="M1100 300 L1100 514" fill="none" stroke="#8B3DFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#head)"/>
+<text x="1076" y="400" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8B3DFF" text-anchor="end">/request · /response</text>
+<path d="M1300 514 L1300 306" fill="none" stroke="#9A97A8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#head-gray)"/>
+<text x="1324" y="400" font-family="DM Mono, JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#8D8A9B" text-anchor="start">pass · mask · reject</text>
+</svg>

@@ -1,0 +1,33 @@
+# Two prompt guards on the `llm` HTTPRoute, run in order. agentgateway's
+# regex guard masks the formatted values first (SSNs, cards, emails, phone
+# numbers); Presidio then masks what has no pattern (names, addresses) in
+# what is left. Completions go through Presidio on the way back.
+# FailClosed (the default) rejects traffic if the webhook is down.
+apiVersion: agentgateway.dev/v1alpha1
+kind: AgentgatewayPolicy
+metadata:
+  name: presidio-guard
+  namespace: agentgateway-system
+spec:
+  targetRefs:
+  - group: gateway.networking.k8s.io
+    kind: HTTPRoute
+    name: llm
+  backend:
+    ai:
+      promptGuard:
+        request:
+        - regex:
+            builtins: [Ssn, CreditCard, Email, PhoneNumber, CaSin]
+            action: Mask
+        - webhook:
+            backendRef:
+              kind: Service
+              name: presidio-guard
+              port: 8000
+        response:
+        - webhook:
+            backendRef:
+              kind: Service
+              name: presidio-guard
+              port: 8000

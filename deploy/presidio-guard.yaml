@@ -1,0 +1,61 @@
+# The Presidio guardrail webhook: the Go guard (agentgateway's webhook API)
+# and presidio-analyzer side by side in one pod, talking over localhost.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: presidio-guard
+  namespace: agentgateway-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: presidio-guard}
+  template:
+    metadata:
+      labels: {app: presidio-guard}
+    spec:
+      containers:
+      - name: guard
+        # The latest release; release-please updates the version.
+        image: ghcr.io/paurosello/presidio-guard:v1.0.0 # x-release-please-version
+        env:
+        - name: PRESIDIO_URL
+          value: http://127.0.0.1:3000
+        # Mask these entity types in prompts and responses.
+        - name: ENTITIES
+          value: PERSON,EMAIL_ADDRESS,PHONE_NUMBER,IBAN_CODE,IP_ADDRESS,LOCATION,US_PASSPORT,US_DRIVER_LICENSE,CREDIT_CARD,US_SSN
+        # Reject the request instead of masking when one of these shows up.
+        - name: REJECT_ENTITIES
+          value: CREDIT_CARD,US_SSN
+        - name: SCORE_THRESHOLD
+          value: "0.5"
+        ports:
+        - {name: http, containerPort: 8000}
+        readinessProbe:
+          httpGet: {path: /healthz, port: http}
+          periodSeconds: 5
+        resources:
+          requests: {cpu: 50m, memory: 32Mi}
+          limits: {memory: 128Mi}
+      - name: analyzer
+        image: ghcr.io/data-privacy-stack/presidio-analyzer:2.2.366
+        env:
+        - {name: PORT, value: "3000"}
+        # gunicorn workers: one per CPU, each loads its own spaCy model.
+        - {name: WORKERS, value: "2"}
+        startupProbe:
+          httpGet: {path: /health, port: 3000}
+          periodSeconds: 5
+          failureThreshold: 60
+        resources:
+          requests: {cpu: "2", memory: 2Gi}
+          limits: {cpu: "2", memory: 3Gi}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: presidio-guard
+  namespace: agentgateway-system
+spec:
+  selector: {app: presidio-guard}
+  ports:
+  - {name: http, port: 8000, targetPort: http}
